@@ -1,0 +1,167 @@
+body{
+  font: 15px Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+}
+.contenedorHeader{
+  width:80%;
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+/* Estilos globales */
+.contenedor{
+  padding:40px;
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+  display: flex;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+.oscuro{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Encabezado **/
+header{
+  background-color:#24282b;
+  color:#ffffff;
+  padding-top:30px;
+  height:7vw;
+}
+header a{
+  color:#ffffff;
+  display: inline-block;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:2vw;
+}
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+header .marca{
+  float:left;
+}
+header .marca h1{
+  margin:0;
+  font-size: 3vw;
+}
+header nav{
+  float:right;
+  margin-top:10px;
+}
+header .resaltado, header a{
+  color:#e43f5a;
+  font-weight:bold;
+}
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Cabecera con imagen */
+.cabecera{
+  min-height:400px;
+  background:url('../img/fondoindex.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+.cabecera h1{
+  display: inline-block;
+  font-size: 5vw;
+  padding: 50px;
+}
+.cabecera p{
+  font-size:20px;
+}
+
+/* Cajas */
+.cajas{
+  margin-top:40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.caja{
+  text-align: center;
+  width:30%;
+  padding:20px;
+}
+.caja img{
+  width:90px;
+}
+
+/* Main-columna */
+article .main-col{
+ display: flex;
+  width:65%;
+}
+
+/* Lateral */
+aside .lateral{
+  width:30%;
+  margin-top:10px;
+}
+
+/* Servicios */
+li{
+  list-style: none;
+}
+ul .servicios li{
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#24282b;
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #marca,
+  header nav,
+  header nav li,
+  .cajas .caja,
+  article .main-col,
+  aside .lateral{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+  .contenedor{
+    display: block;
+  }
+  .contenedorHeader{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  header{
+    padding-bottom:20px;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+  }
+  header .marca{
+    float:none;
+  }
+  header nav{
+    float:none;
+  }
+}
