@@ -1,4 +1,4 @@
-# Proyecto3-RegistrodeUsuarios
+# Proyecto2-RegistrodeUsuarios
 Registro de Usarios.
 
 Lenguajes utilizados: PHP y CSS.
